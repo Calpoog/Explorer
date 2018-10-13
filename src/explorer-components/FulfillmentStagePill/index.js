@@ -15,11 +15,6 @@ const FulfillmentStagePill = props => {
     backgroundColor = 'green';
   }
 
-  if (!accepted && (bountyStage === COMPLETED || bountyStage === DEAD)) {
-    text = 'Rejected';
-    backgroundColor = 'red';
-  }
-
   return (
     <Pill
       className={className}
